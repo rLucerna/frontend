@@ -12,22 +12,40 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: "메인 진입점",
+          headerTitle: "메인 진입점",
+          headerStyle: { backgroundColor: "#4A90E2" },
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="yongjun"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: "용준",
+          headerTitle: "용준",
+          headerStyle: { backgroundColor: "#4A90E2" },
+        }}
+      />
+      <Tabs.Screen
+        name="seoyoung"
+        options={{
+          title: "서영",
+          headerTitle: "서영",
+          headerStyle: { backgroundColor: "#4A90E2" },
+        }}
+      />
+      <Tabs.Screen
+        name="eunseo"
+        options={{
+          title: "은서",
+          headerTitle: "은서",
+          headerStyle: { backgroundColor: "#4A90E2" },
         }}
       />
     </Tabs>
