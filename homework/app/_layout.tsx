@@ -1,8 +1,3 @@
-import {
-  DarkTheme,
-  DefaultTheme,
-  ThemeProvider,
-} from "@react-navigation/native";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
@@ -16,8 +11,16 @@ export default function RootLayout() {
     <>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        {/* 여기에 스택 추가 */}
+        <Stack.Screen name="VolunteeringDetail"
+          options={{
+            title: "봉사 상세 정보"
+          }} />
+
       </Stack>
-      {/* 여기에 스택 추가 */}
+
+
+
       <StatusBar style="auto" />
     </>
   );
