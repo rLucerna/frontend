@@ -72,6 +72,20 @@ export default function UseEffectTab() {
 
         <View style={styles.buttonGroup}>
           <TouchableOpacity
+            style={[styles.btn, { backgroundColor: '#1E8449' }]}
+            onPress={() => router.push('/stacks/exUseEffect')}
+          >
+            <Text style={styles.btnTitle}>useEffect 예제</Text>
+            <Text style={styles.btnSub}>setInterval + cleanup 체험</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.btn, { backgroundColor: '#27AE60' }]}
+            onPress={() => router.push('/stacks/exUseState')}
+          >
+            <Text style={styles.btnTitle}>useState 예제</Text>
+            <Text style={styles.btnSub}>JSONPlaceholder 유저 목록 조회</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
             style={[styles.btn, { backgroundColor: '#2ECC71' }]}
             onPress={() => router.push('/stacks/useEffect-lifecycle')}
           >
