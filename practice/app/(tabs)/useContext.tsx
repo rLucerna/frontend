@@ -72,6 +72,13 @@ export default function UseContextTab() {
 
         <View style={styles.buttonGroup}>
           <TouchableOpacity
+            style={[styles.btn, { backgroundColor: '#0E6655' }]}
+            onPress={() => router.push('/stacks/exUseContext')}
+          >
+            <Text style={styles.btnTitle}>useContext 예제</Text>
+            <Text style={styles.btnSub}>Props Drilling vs Context 비교</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
             style={[styles.btn, { backgroundColor: '#1ABC9C' }]}
             onPress={() => router.push('/stacks/useContext-theme')}
           >
