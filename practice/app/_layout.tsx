@@ -110,6 +110,10 @@ export default function RootLayout() {
           name="stacks/useContext-counter"
           options={{ title: 'Props Drilling vs Context' }}
         />
+        <Stack.Screen
+          name="stacks/yongjun2-hooks"
+          options={{ title: 'yongjun2 hooks 숙제' }}
+        />
       </Stack>
       <StatusBar style="auto" />
     </>

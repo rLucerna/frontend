@@ -96,6 +96,17 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="yongjun2"
+        options={{
+          title: 'yongjun2',
+          headerTitle: 'yongjun2',
+          headerStyle: { backgroundColor: '#34495E' },
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="school-outline" size={size} color={color} />
+          ),
+        }}
+      />
       {/* practice 탭은 메뉴에서 숨김 */}
       <Tabs.Screen
         name="practice"
